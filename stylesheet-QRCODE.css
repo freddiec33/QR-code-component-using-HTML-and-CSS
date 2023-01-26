@@ -1,0 +1,62 @@
+
+/*      VARIABLES                                     */
+
+/* :ROOT applies complete change to whole web page (global change) So here I'm assigning the hsl values to get the exact shades of my desired colors across the site as a whole
+    Another example could be applying back-ground color as opposed to applying it to the body*/
+
+
+    :root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-gray: hsl(212, 45%, 89%);
+    --color-blue: hsl(220, 15%, 55%);
+    --color-dark-blue: hsl(218, 44%, 22%);
+  }
+
+
+  /* FONTS */
+
+  @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+   
+  p { 
+    font-family: 'outfit', sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--color-dark-blue)
+   }
+
+   h1 {
+    font-family: 'outfit', sans-serif;
+    font-weight: 700;
+   }
+
+   /*base styling */
+   *,
+   *::before,
+   *::after {
+    box-sizing: border-box;
+   }
+
+  body {
+    margin: 0;
+    background-color: var(--color-light-gray);
+ 
+  }
+
+  img {
+    height: auto;
+    border-radius: 0.675rem;
+  }
+
+  /* QR CARD */
+
+  main {
+    background-color: var(--color-white);
+    max-width: 320px;
+    padding: 1.075rem;
+    border-radius: 1.35rem;
+    box-shadow: 1.6rem 1.6rem hsla(0, 0, 0, 0.05);
+    text-align: center;
+    margin: 1.075rem;
+}
+    
+  
